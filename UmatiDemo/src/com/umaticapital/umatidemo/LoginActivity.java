@@ -19,6 +19,9 @@ public class LoginActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
+		
+		mLogin  = (Button) findViewById(R.id.button_login_submit);
+		mSignUp = (Button) findViewById(R.id.button_login_signup); 
 	}
 	
 
