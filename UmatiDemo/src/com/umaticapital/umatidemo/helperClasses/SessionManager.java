@@ -24,7 +24,7 @@ public class SessionManager {
 	int PRIVATE_MODE = 0;
 	
 	//Shared pereferences file name
-	private static final String PREF_NAME = "WALLET_LOGIN_PREF";
+	private static final String PREF_NAME = "UMATIDEMO_LOGIN_PREF";
 	
 	//all shared preferences keys
 	private static final String IS_LOGIN = "IsLoggedIn";
