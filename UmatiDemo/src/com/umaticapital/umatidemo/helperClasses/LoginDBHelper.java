@@ -26,7 +26,8 @@ public class LoginDBHelper{
 	public JSONParser jsonParser;
 	public String callActivity=null;
 	public int uploadState=0 ;
-	private String TAG_SUCCESS = "success";
+	public String error_state;
+	private String TAG_SUCCESS = "error";
 	public String userName ;
 	public String message;
 	static String EXTRA_USERNAME = "EXTRA_USERNAME";
@@ -90,12 +91,12 @@ public class LoginDBHelper{
 			List<NameValuePair> params = arg0[0];
 			
 			// getting JSON Object
-			JSONObject json =jsonParser.makeHttpRequest(url_link, "POST", params);
+			JSONObject json = jsonParser.makeHttpRequest(url_link, "POST", params);
 			
 			// check for success tag
 			try 
 			{
-				uploadState = json.getInt(TAG_SUCCESS);
+				error_state = json.getString(TAG_SUCCESS);
 				message = json.getString("message");
 			} catch (JSONException e) {
 				uploadState=999;
@@ -112,7 +113,7 @@ public class LoginDBHelper{
 		@SuppressLint("NewApi")
 		protected void onPostExecute(String file_url) {
 			// dismiss the dialog once done
-			if(uploadState == 1){
+			if(error_state == "false"){
 			   //Toast.makeText(mContext, message, Toast.LENGTH_LONG).show();
 			   pDialog.dismiss();
 			   
@@ -125,7 +126,7 @@ public class LoginDBHelper{
 			   launch_home_activity.putExtra(EXTRA_USERNAME, message);
 			   context.startActivity(launch_home_activity);			   
 			}
-			else if(uploadState ==2)
+			else if(error_state == "true")
 			{
 				Toast.makeText(mContext, message, Toast.LENGTH_LONG).show();
 				pDialog.dismiss();

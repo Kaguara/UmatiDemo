@@ -48,8 +48,8 @@
         >     
     </ListView>
     <Button 
-        android:id="@+id/buttton_print_receipt"
+        android:id="@+id/button_print_receipt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Print Receipt"/>    
+        android:hint="Submit"/>   
 </LinearLayout>
