@@ -10,6 +10,7 @@ import com.umaticapital.umatidemo.helperClasses.LoginDBHelper;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -56,8 +57,10 @@ public class LoginActivity extends Activity{
 			@SuppressLint("ShowToast")
 			@Override
 			public void onClick(View v) {
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(i);
 				//get the username and password from the edit text views
-				mUsername = (((EditText) findViewById(R.id.et_login_username)).getText()).toString();
+				/*mUsername = (((EditText) findViewById(R.id.et_login_username)).getText()).toString();
 				mPassword = (((EditText) findViewById(R.id.et_login_password)).getText()).toString();
 				//set the sync_farmer values
 				sync_farmer = 0;
@@ -84,13 +87,10 @@ public class LoginActivity extends Activity{
 				//get the UploadData helper class to interact with the MySQL database
 				login_helper.setUrl(login_url);
 				login_helper.setParams(mParams);
-				login_helper.execute(getApplicationContext());				
+				login_helper.execute(getApplicationContext());	*/
 			}
 		});	
 		
-		
-		
 	}
-	
 
 }

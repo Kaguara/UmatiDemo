@@ -47,7 +47,8 @@
             android:layout_height="match_parent"
             android:background="#FF0000"
             android:textColor="#FFFFFF"
-            android:text="Switch" />
+            android:textOn="Pass"
+            android:textOff="Fail" />
     </LinearLayout>
 
     </LinearLayout>

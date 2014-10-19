@@ -6,5 +6,38 @@
     <string name="hello_world">Hello world!</string>
     <string name="signup">Need a new account? Signup up here</string>
     <string name="login">Login</string>
+    <string name="collection_info">Collection Info</string>
+    <string name="quality_standard">Quality Standard</string>
+    <string name="weight">Weight</string>
+    <string name="odour">Odour</string>
+    <string name="soiled">Soiled Grain</string>
+    <string name="weight_hint">Enter Weight</string>
+    <string name="weight_logo">Weight (Kg)</string>
+    <string name="variety">Variety (Kg)</string>
+    <string name="receipt_heading">Smart Logistics</string>
+    <string name="receipt_num_heading">Receipt No: </string>
+    <string name="date_heading">Date: </string>
+    <string name="divider">         --------------------------------------------------------------------------------------</string>
+    <string name="farmer_heading">Farmer: </string>
+    <string name="moisture_heading">Moisture Level: </string>
+    <string name="foreign_heading">Foreign Matter: </string>
+    <string name="damaged_heading">Damaged Grain: </string>
+    <string name="insects_heading">Insects: </string>
+    <string name="odour_heading">Odour/Taste: </string>
+    <string name="soiled_heading">Soiled Grain: </string>
+    <string name="variety_heading">Variety Mix: </string>
+    <string name="weight_heading">Weight (KGS): </string>
+    <string name="sub_total_heading">Sub Total: </string>
+    <string name="currency">KSHS </string>
+    <string name="total_heading">Total: </string>
+    <string name="date_hint">Click to set date</string>
+    <string name="terms">TERMS AND CONDITIONS APPLY</string>
+
+    <string-array name="farmer_names">
+        <item>Select a Farmer</item>
+        <item>John Kamau</item>
+        <item>Mary Jane</item>
+        <item>George Omondi</item>
+    </string-array>
 
 </resources>

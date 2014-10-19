@@ -25,7 +25,6 @@ public class LoginDBHelper{
 	public List<NameValuePair> params = new ArrayList<NameValuePair>();
 	public JSONParser jsonParser;
 	public String callActivity=null;
-	public int uploadState=0 ;
 	public String error_state;
 	private String TAG_SUCCESS = "error";
 	public String userName ;
@@ -99,7 +98,7 @@ public class LoginDBHelper{
 				error_state = json.getString(TAG_SUCCESS);
 				message = json.getString("message");
 			} catch (JSONException e) {
-				uploadState=999;
+				error_state="999";
 				e.printStackTrace();
 				Log.e("tag3","Throwing JSON Exception");
 			}
