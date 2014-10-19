@@ -232,7 +232,7 @@
             android:textStyle="bold"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
-            android:hint="level"/>
+            android:hint="2000"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
